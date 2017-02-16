@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta http-equiv="content-type" content="text/html; utf-8">
+      <title>Ordenador de Serie</title>
+	  <link rel=stylesheet href="css/style.css" type="text/css"/>
+	  <link rel=stylesheet href="css/animate.css" type="text/css"/>
+   </head>
+
+   <body>
+	<header>
+		<div class="div1">
+			<div class="img">
+				<img src="img/img_01.png">
+			</div>
+			
+			<div class="titulo">
+				<h1 class="bienvenida">Bienvenido al Sistema Ordenador de Serie</h1>
+				<hr/>
+			</div>
+		</div>	
+	</header>
+	
+	<section>
+		<article class="article1">
+			<p>En el presente sistema, tiene como funcion ordenar de manera ascendente un conjunto de números enteros.</p>
+		</article>
+		
+		<article class="article2">
+			<div class="aninacion1"></div>
+			<p id="nota"> Observación: Los números ingresados no deben repetirse y deben estar separados por coma (,).</p>
+		</article>	
+		
+		<article class="article3">
+			<input type="text" id="numero" onkeypress="return solonumeroycoma(event);" required>
+			<button type="button" onclick="ordenar()">Mostrar Resultado</button>
+			<div id="resultado"></div>
+
+			<script>
+				 document.getElementById("numero").focus();
+
+				function solonumeroycoma(evt){  
+					var nav4 = window.Event ? true : false; 
+					var key = nav4 ? evt.which : evt.keyCode;  
+					return (key <= 13 || (key >= 48 && key <= 57) || key==44);
+				} 
+																				
+				function ordenar() {
+				var f = document.getElementById("numero").value;
+
+					var datos=f.split(",");
+					var datoSort=datos.sort();
+					var valoresOrdenados="";
+					for (var i =0; i <= datoSort.length - 1; i++) {
+						  if(i>0)valoresOrdenados=valoresOrdenados+",";
+						  valoresOrdenados=valoresOrdenados+datoSort[i];
+					}
+					document.getElementById("resultado").innerHTML =valoresOrdenados;
+			}
+			</script>
+		</article>
+	</section>
+	
+	<footer>
+		<p class="div3">Desarrollo gracias a <u>La prueba de Desafío FrontEnd</u></p>
+    </footer>
+   </body>
+ </html>

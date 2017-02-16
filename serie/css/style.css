@@ -1,0 +1,125 @@
+body {
+	background-color: #fff;
+	color: #cccccc;
+	font-family: 'Lato', sans-serif;
+	padding: 30px 100px;
+	overflow-x: hidden;
+}
+
+button {
+	background-color: #000;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	height: 42.5px;
+	padding-left: 10px;
+	width: 150px;
+}
+
+hr {
+	border-top: 6px solid #FFBF00!Important;
+	margin: 4px auto;
+	width: 450px;
+}
+
+img {
+	height: 190px;
+	width: 200px;
+}
+
+footer {
+	bottom: 0;
+	color: #A4A4A4;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.aninacion1 {
+    animation-name: MiAnimacion;
+    animation-duration: 10s;
+	float: left;
+	margin-right: 25px;
+     width: 65px;
+     height: 65px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: red;
+    -webkit-animation-name: MiAnimacion; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes MiAnimacion {
+    from {background-color: white;}
+    to {background-color: red;}
+}
+/* Standard syntax */
+@keyframes MiAnimacion {
+    from {background-color: white;}
+    to {background-color: red;}
+}
+
+.article1 {
+	font-size: 1.38em;
+	font-weight: 300px;
+	margin: 100px 30px;
+	text-align: justify;
+	line-height: 1.38;  
+}
+
+.article2 {
+	font-size: 1.38em;
+	font-weight: 300px;
+	margin: -80px 30px;
+	text-align: justify;	
+ 	line-height: 1.38;	
+}
+
+.article3 {
+	margin-top: 150px;
+	margin-left: 200px;
+}
+
+.bienvenida {
+	font-family: "Brandon", Helvetica, Arial, sans-serif;
+	color: #000;
+	text-align: center;
+}
+
+.div1 {
+	height: 200px;
+	width: 100%;
+}
+
+.titulo {
+	margin-top: -150px;
+}
+
+#nota {
+	margin-top: 10px;
+}
+
+#numero {
+	background-color: #D3D3D3;
+	border: none;
+	border-radius: 10px;
+	color: #000;
+	height: 40px;
+	margin-right: 23px;
+	padding-left: 15px;
+	width: 300px;
+}
+
+#resultado {
+	background-color: #D3D3D3;
+	border: none;
+	border-radius: 10px;
+	color: #B22222;
+	height: 42px;
+	margin-left: 520px;
+	margin-top: -41px;
+	padding-left: 15px;
+	line-height: 40px;
+	width: 300px;
+}
